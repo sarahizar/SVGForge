@@ -4,7 +4,7 @@ const fs = require('fs');
 const { Circle, Triangle, Square } = require('./library.shapes/shapes.js');
 async function generateLogo() {
     try {
-      // Prompt user for input
+      // Prompts user for input
       const userInput = await inquirer.prompt([
         {
           type: 'input',
@@ -30,7 +30,7 @@ async function generateLogo() {
         },
       ]);
   
-      // Create the corresponding shape object based on user input
+      // Creates the corresponding shape object based on user input
       let shape;
       switch (userInput.shapeType) {
         case 'circle':
@@ -46,14 +46,14 @@ async function generateLogo() {
           throw new Error('Invalid shape type');
       }
   
-      // Build SVG
+      // Builds SVG
       const svgMarkup = `
         <svg width="300" height="200">
           ${shape.render()}
           <text x="150" y="100" fill="${userInput.textColor}" text-anchor="middle" dominant-baseline="middle">${userInput.text}</text>
         </svg>`;
   
-      // Save SVG to file
+      // Saves SVG to file
       fs.writeFileSync('logo.svg', svgMarkup);
   
       console.log('Generated logo.svg');
@@ -62,5 +62,5 @@ async function generateLogo() {
     }
   }
   
-  // Run the application
+  // Runs the application
   generateLogo();

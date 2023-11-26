@@ -4,7 +4,7 @@ class Shape {
     }
   
     render() {
-      // This method should be overridden by child classes
+      // This method will be overridden by child classes
       throw new Error('Method not implemented');
     }
   }
