@@ -44,10 +44,10 @@ In order to test if your application is working- run 'npx jest' in the command l
 ## Screenshot
 Please follow the link to the screen recording:
 
-https://drive.google.com/file/d/13Sk1PCLDv9WpTvOmTBx3CV9HLU1ftzUp/preview
+https://drive.google.com/file/d/1YXOub9oIL6lf5tsiCWUbbJ_z6qUDYTxw/preview
 
 Or you can use the QR Code to watch the tutorial video:
-![My Image](/qr-code%20(2).png)
+![My Image](/qr-code%20(3).png)
 
 
 ## Questions
